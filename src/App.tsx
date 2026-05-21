@@ -11,8 +11,7 @@ function App() {
     canvas.style.pointerEvents = 'none';
     document.body.appendChild(canvas);
 
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
+    const ctx = canvas.getContext('2d')!;
 
     function resize() {
       canvas.width = window.innerWidth;
